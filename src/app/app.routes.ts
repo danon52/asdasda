@@ -1,3 +1,10 @@
 import { Routes } from '@angular/router';
+import { IndexPage } from './pages/index-page/index-page';
+import { UsersPage } from './pages/users-page/users-page';
+import { SingleUserPage } from './pages/single-user-page/single-user-page';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', component: IndexPage },
+  { path: 'users', component: UsersPage },
+  { path: 'users/:id', component: SingleUserPage },
+];
