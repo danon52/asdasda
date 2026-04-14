@@ -1,1 +1,10 @@
-<p>single-user-page works! - {{userId}}</p>
+<div>
+  <button [class]="{
+    'active': show()
+  }" (click)="show.update(prev => !prev)">Показать</button>
+  @if (show()) {
+  <p>Текст</p>
+  }
+</div>
+
+<p appConsoler>Текст параграфа</p>
