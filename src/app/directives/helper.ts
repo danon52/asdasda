@@ -17,13 +17,10 @@ export class Helper {
   @HostListener('mouseenter') onHover() {
     if (!this.fired) {
       this.border = 'none';
-
       this.messageBox = document.createElement('div');
-
       this.messageBox.textContent = this.hintText();
-
       document.body.appendChild(this.messageBox);
-
+        
       setTimeout(() => {
         this.messageBox?.remove();
       }, 2000);
