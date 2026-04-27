@@ -13,4 +13,5 @@ export const routes: Routes = [
   {path: 'home' , component: HomePAge} , 
   {path: 'work' , component: WorkPage} , 
   {path: 'news' , component:NewPostsPage }
+
 ];

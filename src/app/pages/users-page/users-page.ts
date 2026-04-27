@@ -12,9 +12,7 @@ import { ReversePipe } from '../../pipes/reverse-pipe';
 })
 export class UsersPage implements OnInit {
   private userService = inject(UserService);
-
   users = signal<User[]>([]);
-
   date = signal(Date.now());
 
   ngOnInit(): void {
